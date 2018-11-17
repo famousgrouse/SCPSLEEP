@@ -80,12 +80,13 @@ Ytrain = groundtruth(tmp_idx_train,:);
 
 
 % segment train and test
-% for i = 1:length(patient_unique_list)
-%     tmp_test_id = patient_unique_list(i); % get the test patient id
-%     tmp_idx_test  = find(pat_id2_ground == test_id); % get all index from dataset
-%     tmp_Xtest = dataset_x(tmp_idx_test,:);
-%     tmp_Ytest = groundtruth(tmp_idx_test,:);
-%     tmp_idx_train = find(pat_id2_ground ~= test_id);
-%     tmp_Xtrain = dataset_x(tmp_idx_train,:);
-%     tmp_Ytrain = groundtruth(tmp_idx_train,:); 
-% end
+for i = 1:length(patient_unique_list)
+    tmp_test_id = patient_unique_list(i); % get the test patient id
+    tmp_idx_test  = find(pat_id2_ground == test_id); % get all index from dataset
+    tmp_Xtest = dataset_x(tmp_idx_test,:);
+    tmp_Ytest = groundtruth(tmp_idx_test,:);
+    tmp_idx_train = find(pat_id2_ground ~= test_id);
+    tmp_Xtrain = dataset_x(tmp_idx_train,:);
+    tmp_Ytrain = groundtruth(tmp_idx_train,:); 
+    Xtest
+end
