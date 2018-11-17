@@ -1,0 +1,3 @@
+%get the size of the array
+[dim1, dim2] = size(dist);
+for i =1:length(
